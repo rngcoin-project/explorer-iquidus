@@ -108,7 +108,7 @@ Iquidus Explorer is intended to be generic so it can be used with any wallet fol
 
 ### Comments
 
-The explorer is adapted for the RNC coin.
+The explorer is adapted for the RNG coin.
 Added display of comments.
 
 ### Donate
