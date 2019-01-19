@@ -106,6 +106,11 @@ Iquidus Explorer is intended to be generic so it can be used with any wallet fol
 
     -daemon -txindex
 
+### Comments
+
+The explorer is adapted for the RNC coin.
+Added display of comments.
+
 ### Donate
 
     BTC: 168hdKA3fkccPtkxnX8hBrsxNubvk4udJi

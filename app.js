@@ -66,6 +66,7 @@ app.use('/ext/getaddress/:hash', function(req,res){
         received: (address.received / 100000000),
         balance: (address.balance / 100000000).toString().replace(/(^-+)/mg, ''),
         last_txs: address.txs,
+        tx_comment: address.tx_comment,
       };
       res.send(a_ext);
     } else {

@@ -7,7 +7,9 @@ block content
     img.qrcode.pull-right.hidden-xs(src='/qr/#{address.a_id}')
   .col-xs-12.col-md-10.col-md-offset-1
     .panel.panel-default.panel-address-summary
-      .panel-heading(style='position:relative;')        
+      .panel-heading(style='position:relative;')
+        strong Comment: #{address.tx_comment}
+      .panel-heading(style='position:relative;')
         strong #{address.a_id}
         if settings.labels[address.a_id]
           if settings.labels[address.a_id].type  

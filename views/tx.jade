@@ -6,6 +6,10 @@ block content
     .well.well-sm.hidden-lg.hidden-md(style='word-wrap:break-word;')
       | #{tx.txid}
     .panel.panel-default
+
+      .panel-heading.hidden-xs
+        strong Comment: #{tx.tx_comment}
+
       .panel-heading.hidden-xs
         strong #{settings.symbol} txid: #{tx.txid}
         a(href='/api/getrawtransaction?txid=#{tx.txid}&decrypt=1')

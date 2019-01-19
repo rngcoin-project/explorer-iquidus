@@ -60,6 +60,7 @@ function route_get_tx(res, txid) {
                       timestamp: rtx.time,
                       blockhash: '-',
                       blockindex: -1,
+                      tx_comment: rtx.tx_comment,
                     };
                     res.render('tx', { active: 'tx', tx: utx, confirmations: settings.confirmations, blockcount:-1});
                   } else {
@@ -71,6 +72,7 @@ function route_get_tx(res, txid) {
                       timestamp: rtx.time,
                       blockhash: rtx.blockhash,
                       blockindex: rtx.blockheight,
+                      tx_comment: rtx.tx_comment,
                     };
                     lib.get_blockcount(function(blockcount) {
                       res.render('tx', { active: 'tx', tx: utx, confirmations: settings.confirmations, blockcount: blockcount});
